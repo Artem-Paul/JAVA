@@ -1,6 +1,7 @@
 // 1) Дана последовательность N целых чисел. Найти сумму простых чисел.
 
 package HW2;
+
 import java.util.Scanner;
 
 public class ex1 {
@@ -22,7 +23,6 @@ public class ex1 {
             } else {
                 int count = 0;
                 for (int j = 2; j <= Math.sqrt(currentNum); j++) {
-
                     if (currentNum % j != 0) {
                         count += 1;
                     }
