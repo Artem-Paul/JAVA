@@ -17,7 +17,7 @@ public class Ex3 {
         Books books2 = new Books("Синяя", "Садоводов", 165.6, 1994, 97);
         Books books3 = new Books("Война и Мир", "Толстой", 450.0, 1973, 800);
         Books books4 = new Books("Та что найдется", "Авдеев", 1000.0, 2023, 388);
-        Books books5 = new Books("Последняя", "Капустин", 1000.0, 2010, 283);
+        Books books5 = new Books("Последняя", "Капустин", 1000.0, 2010, 800);
 
         List<Books> booksList = new ArrayList();
         booksList.add(books);
@@ -30,7 +30,7 @@ public class Ex3 {
         System.out.println("Нашлись следующие книги: ");
         for (Books el : booksList) {
             if ((ProstNum(el.getPages())) &&
-                    ((el.getSurname().contains("А")) || (el.getSurname().contains("а"))) &&
+                    ((el.getSurname().contains("Ав")) || (el.getSurname().contains("а"))) &&
                     (el.getYear() >= 2010)) {
                 System.out.println(el.getTitle());
             }
