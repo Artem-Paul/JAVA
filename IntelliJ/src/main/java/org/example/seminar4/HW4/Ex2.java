@@ -1,9 +1,5 @@
 package org.example.seminar4.HW4;
 
-
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  * Учитывая строку s, содержащую только символы '(', ')', '{', '}', '['и ']', определите, является ли входная строка допустимой.
  * Строка ввода является допустимой, если:
@@ -27,13 +23,13 @@ public class Ex2 {
         System.out.println(input6 + ": " + isValid(input6));
     }
 
-    private static boolean isValid(String inputString) {
-        char[] arr = inputString.toCharArray();
+    private static boolean isValid(String s) {
+        char[] arr = s.toCharArray();
         for (int i = 0; i < arr.length; i++) {
             if (arr.length % 2 != 0) {
                 return false;
             }
-            if ((arr[i] == '[') && (arr[i + 1] == ']')) {
+            if ((arr[i] == '[' && (arr[i + 1] == ']')) {
                 return true;
             }
             if ((arr[i] == '(') && (arr[i + 1] == ')')) {
