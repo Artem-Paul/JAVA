@@ -13,26 +13,34 @@ import java.util.List;
  */
 public class Ex2 {
     public static void main(String[] args) {
-        String inputString1 = "()";
-        String inputString2 = "()[]{}";
-        String inputString3 = "(]";
-        String inputString4 = "[(])";
-        String inputString5 = "]";
-        System.out.println(inputString1 + ": " + isValid(inputString1));
-        System.out.println(inputString2 + ": " + isValid(inputString2));
-        System.out.println(inputString3 + ": " + isValid(inputString3));
-        System.out.println(inputString4 + ": " + isValid(inputString4));
-        System.out.println(inputString5 + ": " + isValid(inputString5));
+        String input1 = "()";
+        String input2 = "()[]{}";
+        String input3 = ")[]";
+        String input4 = "[(])";
+        String input5 = "[])";
+        String input6 = "][";
+        System.out.println(input1 + ": " + isValid(input1));
+        System.out.println(input2 + ": " + isValid(input2));
+        System.out.println(input3 + ": " + isValid(input3));
+        System.out.println(input4 + ": " + isValid(input4));
+        System.out.println(input5 + ": " + isValid(input5));
+        System.out.println(input6 + ": " + isValid(input6));
     }
 
     private static boolean isValid(String inputString) {
-        List<String> list = new LinkedList<>();
         char[] arr = inputString.toCharArray();
         for (int i = 0; i < arr.length; i++) {
-            if ((arr[i].equals("[")) || (arr[i].equals("(")) || arr[i].equals("{")) {
-                if ((list.get(i).equals("[")) && (list.get(i + 1).equals("]"))) return true;
-                if ((list.get(i).equals("(")) && (list.get(i + 1).equals(")"))) return true;
-                if ((list.get(i).equals("{")) && (list.get(i + 1).equals("}"))) return true;
+            if (arr.length % 2 != 0) {
+                return false;
+            }
+            if ((arr[i] == '[') && (arr[i + 1] == ']')) {
+                return true;
+            }
+            if ((arr[i] == '(') && (arr[i + 1] == ')')) {
+                return true;
+            }
+            if ((arr[i] == '{') && (arr[i + 1] == '}')) {
+                return true;
             } else {
                 return false;
             }
