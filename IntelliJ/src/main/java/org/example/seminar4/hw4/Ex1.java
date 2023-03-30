@@ -1,8 +1,7 @@
-package org.example.seminar4.HW4;
+package org.example.seminar4.hw4;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * 1)Вывести список на экран в перевернутом виде (без массивов и ArrayList)

@@ -1,4 +1,4 @@
-package org.example.seminar4.HW4;
+package org.example.seminar4.hw4;
 
 /**
  * Учитывая строку s, содержащую только символы '(', ')', '{', '}', '['и ']', определите, является ли входная строка допустимой.
@@ -29,13 +29,13 @@ public class Ex2 {
             if (arr.length % 2 != 0) {
                 return false;
             }
-            if ((arr[i] == '[' && (arr[i + 1] == ']')) {
+            if (arr[i] == '[' && arr[i + 1] == ']') {
                 return true;
             }
-            if ((arr[i] == '(') && (arr[i + 1] == ')')) {
+            if (arr[i] == '(' && arr[i + 1] == ')') {
                 return true;
             }
-            if ((arr[i] == '{') && (arr[i + 1] == '}')) {
+            if (arr[i] == '{' && arr[i + 1] == '}') {
                 return true;
             } else {
                 return false;
