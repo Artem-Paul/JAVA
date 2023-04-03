@@ -1,6 +1,6 @@
-package org.example.seminar3.HW3;
+package org.example.seminar3.hw3;
 
-import org.example.seminar3.HW3.model.Items;
+import org.example.seminar3.hw3.model.Items;
 
 import java.util.ArrayList;
 import java.util.List;

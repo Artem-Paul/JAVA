@@ -22,9 +22,7 @@ public class Vector {
         this.x = x;
     }
 
-    public Double getY() {
-        return y;
-    }
+    public Double getY() { return y;  }
 
     public void setY(Double y) {
         this.y = y;
@@ -63,18 +61,16 @@ public class Vector {
     }
 
     /**
-     *
      * @param vector2 координаты второго вектора
      * @return векторное произведение
      */
     public Vector vectorMulti(Vector vector2) {
         return new Vector(this.y * vector2.z - this.z * vector2.y,
-                this.z * vector2.x  - this.x * vector2.z,
+                this.z * vector2.x - this.x * vector2.z,
                 this.x - vector2.y * this.y * vector2.y);
     }
 
     /**
-     *
      * @param vector2 второй вектор
      * @return коинус угла между векторами
      */
@@ -83,7 +79,6 @@ public class Vector {
     }
 
     /**
-     *
      * @param vector2 второй вектор
      * @return сумму векторов
      */
@@ -92,7 +87,6 @@ public class Vector {
     }
 
     /**
-     *
      * @param vector2 второй вектор
      * @return разницу векторов
      */

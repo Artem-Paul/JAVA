@@ -1,6 +1,6 @@
-package org.example.seminar3.HW3;
+package org.example.seminar3.hw3;
 
-import org.example.seminar3.HW3.model.Books;
+import org.example.seminar3.hw3.model.Books;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class Ex3 {
 
     private static boolean ProstNum(Integer pages) {
         if ((pages == 2 || pages == 5 || pages == 3) &&
-                (pages % 10 == 5 || pages % 2 == 0 || pages % 3 == 0)) {
+                ((pages % 10 == 5) || (pages % 2 == 0) || (pages % 3 == 0))) {
             int count = 0;
             for (int j = 2; j <= Math.sqrt(pages); j++) {
                 if (pages % j != 0) {

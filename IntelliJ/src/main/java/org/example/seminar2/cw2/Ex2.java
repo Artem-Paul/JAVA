@@ -1,9 +1,7 @@
 package org.example.seminar2.cw2;
 
-import com.sun.nio.sctp.SctpSocketOption;
 import org.example.seminar2.cw2.model.Vector;
 
-import java.sql.SQLOutput;
 
 public class Ex2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.seminar3.HW3.model;
+package org.example.seminar3.hw3.model;
 
 import lombok.AllArgsConstructor;
 
