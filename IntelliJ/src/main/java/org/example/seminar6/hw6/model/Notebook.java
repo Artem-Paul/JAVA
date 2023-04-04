@@ -35,7 +35,6 @@ public class Notebook {
                 "\n";
     }
 
-
     public String getBrand() {
         return brand;
     }
