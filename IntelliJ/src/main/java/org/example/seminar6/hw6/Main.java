@@ -4,7 +4,6 @@ import org.example.seminar6.hw6.model.Notebook;
 import org.example.seminar6.hw6.model.Filter;
 
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 public class Main {

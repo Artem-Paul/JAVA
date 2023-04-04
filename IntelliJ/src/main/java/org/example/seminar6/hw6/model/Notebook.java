@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 
-
 @Data
 @AllArgsConstructor
 public class Notebook {
@@ -27,13 +26,13 @@ public class Notebook {
 
     @Override
     public String toString() {
-        return "Ноутбук: " + brand  +
+        return "Ноутбук: " + brand +
                 " Модель: " + model +
                 " Процессор: " + cpu +
                 ", Объем оперативной памяти: " + ram +
                 ", Обьем памяти: " + ssd +
                 ", Цена: " + price +
-                "\n" ;
+                "\n";
     }
 
 
