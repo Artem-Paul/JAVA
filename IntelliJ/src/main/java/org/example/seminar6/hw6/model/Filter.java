@@ -3,9 +3,8 @@ package org.example.seminar6.hw6.model;
 import java.util.*;
 
 public class Filter {
-    public Set<Notebook> notebooks;
 
-    public void search() {
+    public void search(Set<Notebook> notebooks) {
         Set<Notebook> notebookList = new HashSet<>();
         System.out.println("1 - Марка\n" +
                 "2 - Процессор\n" +
