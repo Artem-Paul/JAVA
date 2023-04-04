@@ -39,22 +39,6 @@ public class Notebook {
                 "\n" ;
     }
 
-    public boolean validateObject() {
-        return true;
-    }
-
-    public static Set<String> propertiesForFilter() {
-        Set<String> list = new HashSet<>();
-        list.add("brand");
-        list.add("model");
-        list.add("cpu");
-        list.add("ram");
-        list.add("ssd");
-        list.add("price");
-
-        return list;
-    }
-
 
     public String getBrand() {
         return brand;
