@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Filter {
     public Set<Notebook> notebooks;
+
     public void search() {
         Set<Notebook> notebookList = new HashSet<>();
         System.out.println("1 - Марка\n" +
