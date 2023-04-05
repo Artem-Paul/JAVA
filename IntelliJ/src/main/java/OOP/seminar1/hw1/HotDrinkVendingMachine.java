@@ -15,7 +15,7 @@ public class HotDrinkVendingMachine implements VendingMachine {
         for (Product product : products) {
             if (product instanceof HotDrink) {
                 if (product.getName().equalsIgnoreCase(name) && ((HotDrink) product).getVolume() == volume
-                        && ((HotDrink) product).getTemp() <= 65) {
+                        && ((HotDrink) product).getTemp() < 70) {
                     return (HotDrink) product;
                 }
             }
