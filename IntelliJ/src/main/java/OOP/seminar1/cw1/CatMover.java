@@ -1,4 +1,5 @@
 package OOP.seminar1.cw1;
 
-public class CatMover {
+public abstract class CatMover {
+    public abstract void saySomething();
 }

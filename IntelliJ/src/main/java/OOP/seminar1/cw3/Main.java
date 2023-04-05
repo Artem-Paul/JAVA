@@ -1,7 +1,6 @@
-package OOP.seminar1.cw2;
+package OOP.seminar1.cw3;
 
-import OOP.seminar1.cw3.BottleOfWaterVendingMachine;
-import OOP.seminar1.cw3.Water;
+import OOP.seminar1.cw2.Product;
 
 import java.util.ArrayList;
 import java.util.List;

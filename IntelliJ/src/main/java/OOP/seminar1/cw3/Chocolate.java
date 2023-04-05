@@ -1,6 +1,8 @@
-package OOP.seminar1.cw2;
+package OOP.seminar1.cw3;
 
-public class Chocolate extends Product{
+import OOP.seminar1.cw2.Product;
+
+public class Chocolate extends Product {
 
     private Integer sugar;
 
