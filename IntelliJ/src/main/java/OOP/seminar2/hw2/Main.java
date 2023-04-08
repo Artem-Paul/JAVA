@@ -31,7 +31,7 @@ public class Main {
         Filter notebookOOP = new Filter(notebooks);
         notebookOOP.search(notebooks);
 
-
+        System.out.println(notebookOOP.getNotebook("win", "Asus", "Vivo", "Intel", 8, 512, 800));
     }
 }
 
