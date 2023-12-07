@@ -14,3 +14,4 @@ public class Main {
         market.update();
     }
 }
+

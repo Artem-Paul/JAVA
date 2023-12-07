@@ -67,3 +67,4 @@ public class Market implements QueueBehaviour {
         releaseFromMarket(releasedActors);
     }
 }
+

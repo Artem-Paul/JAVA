@@ -30,3 +30,4 @@ public class Human extends Actor {
         return super.isTakeOrder;
     }
 }
+
