@@ -3,14 +3,14 @@ package OOP.seminar2.hw2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Market implements QueueBehaviour, MarketBehaviour {
+public class Market implements QueueBehaviour {
 
     List<Actor> queue = new ArrayList<>();
 
     @Override
     public void acceptToMarket(Actor actor) {
         System.out.println(actor.getName() + " зашел в магазин");
-        takeInQueue(actor);
+        marketBehaviourAdd(actor);
     }
 
     @Override
@@ -25,11 +25,11 @@ public class Market implements QueueBehaviour, MarketBehaviour {
     public void update() {
         makeOrders();
         takeOrders();
-        releaseFromQueue();
+        marketBehaviourDel();
     }
 
     @Override
-    public void takeInQueue(Actor actor) {
+    public void marketBehaviourAdd(Actor actor) {
         System.out.println(actor.getName() + " встал в очередь");
         queue.add(actor);
 
@@ -56,7 +56,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
     }
 
     @Override
-    public void releaseFromQueue() {
+    public void marketBehaviourDel() {
         List<Actor> releasedActors = new ArrayList<Actor>();
         for (Actor actor : queue) {
             if (actor.isTakeOrder) {
