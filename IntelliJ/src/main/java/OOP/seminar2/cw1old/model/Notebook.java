@@ -1,4 +1,4 @@
-package OOP.seminar2.hw2.model;
+package OOP.seminar2.cw1old.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

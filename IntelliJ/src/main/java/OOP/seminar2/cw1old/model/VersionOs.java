@@ -1,6 +1,4 @@
-package OOP.seminar2.hw2.model;
-
-import java.util.Set;
+package OOP.seminar2.cw1old.model;
 
 public class VersionOs extends Notebook {
     private String os;
