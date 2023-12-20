@@ -4,6 +4,7 @@ import OOP.seminar5.hw5.model.Student;
 import OOP.seminar5.hw5.service.DataService;
 import OOP.seminar5.hw5.service.StudentGroupService;
 import OOP.seminar5.hw5.model.Teacher;
+import OOP.seminar5.hw5.model.Type;
 import OOP.seminar5.hw5.view.StudentGroupView;
 import OOP.seminar5.hw5.view.StudentView;
 import OOP.seminar5.hw5.view.TeacherView;
